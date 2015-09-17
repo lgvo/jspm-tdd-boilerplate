@@ -6,7 +6,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jspm', 'mocha', 'chai'],
+    frameworks: ['es5-shim', 'jspm', 'mocha', 'chai'], // using es5-shim make phantomjs work
 
     // list of files / patterns to load in the browser
     jspm: {
@@ -52,7 +52,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
